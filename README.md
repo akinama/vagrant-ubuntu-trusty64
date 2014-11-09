@@ -20,6 +20,7 @@ https://downloads.getchef.com/chef-dk/
 
 # Command
 ```sh
+% berks install
 % vagrant up
 ```
 
