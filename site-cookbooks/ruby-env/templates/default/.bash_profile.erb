@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ . ~/.bashrc ]; then
+  . ~/.bashrc
+fi
+
+PATH=$PATH:$HOME/bin
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"

@@ -1,0 +1,12 @@
+I, [2014-08-16T10:15:51.372404 #39169]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-08-16T10:15:51.372605 #39169]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-08-16T10:15:51.374931 #39169]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m0.00s).
+I, [2014-08-16T10:15:51.375288 #39169]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-08-16T10:15:51.375483 #39169]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-08-16T10:15:53.142064 #39169]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-08-16T10:15:53.390839 #39169]  INFO -- default-ubuntu-1204: ==> default: Box 'opscode-ubuntu-12.04' could not be found. Attempting to find and install...
+I, [2014-08-16T10:15:53.391135 #39169]  INFO -- default-ubuntu-1204:     default: Box Provider: virtualbox
+I, [2014-08-16T10:15:53.391407 #39169]  INFO -- default-ubuntu-1204:     default: Box Version: >= 0
+I, [2014-08-16T10:15:54.938641 #39169]  INFO -- default-ubuntu-1204: ==> default: Adding box 'opscode-ubuntu-12.04' (v0) for provider: virtualbox
+I, [2014-08-16T10:15:54.944240 #39169]  INFO -- default-ubuntu-1204:     default: Downloading: https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-12.04_chef-provisionerless.box
+[K    default: Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)[K    default: Progress: 0% (Rate: 14135/s, Estimated time remaining: 8:32:06)

@@ -1,0 +1,616 @@
+I, [2014-08-16T10:16:26.782200 #39326]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2014-08-16T10:16:26.782409 #39326]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-08-16T10:16:26.783658 #39326]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m0.00s).
+I, [2014-08-16T10:16:26.785349 #39326]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
+I, [2014-08-16T10:16:26.785615 #39326]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2014-08-16T10:16:28.332890 #39326]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-08-16T10:16:28.674134 #39326]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+[KProgress: 10%[KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[KI, [2014-08-16T10:16:40.150670 #39326]  INFO -- default-ubuntu-1404: ==> default: Matching MAC address for NAT networking...
+I, [2014-08-16T10:16:40.850751 #39326]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1408151800817_62780
+I, [2014-08-16T10:16:40.966089 #39326]  INFO -- default-ubuntu-1404: [0mSkipping Berkshelf with --no-provision[0m
+I, [2014-08-16T10:16:41.338605 #39326]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2014-08-16T10:16:41.376723 #39326]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2014-08-16T10:16:41.422160 #39326]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2014-08-16T10:16:41.422768 #39326]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2014-08-16T10:16:41.466243 #39326]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2014-08-16T10:16:41.552858 #39326]  INFO -- default-ubuntu-1404:     default: 22 => 2200 (adapter 1)
+I, [2014-08-16T10:16:43.831262 #39326]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2014-08-16T10:16:44.129348 #39326]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2014-08-16T10:16:44.521685 #39326]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2200
+I, [2014-08-16T10:16:44.521857 #39326]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2014-08-16T10:16:44.522278 #39326]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2014-08-16T10:16:59.728310 #39326]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2014-08-16T10:17:01.140372 #39326]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2014-08-16T10:17:01.141019 #39326]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2014-08-16T10:17:01.183818 #39326]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2014-08-16T10:17:09.818373 #39326]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2014-08-16T10:17:12.060968 #39326]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2014-08-16T10:17:12.067142 #39326]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m45.28s).
+I, [2014-08-16T10:17:12.067646 #39326]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2014-08-16T10:17:12.073062 #39326]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2014-08-16T10:17:12.075124 #39326]  INFO -- default-ubuntu-1404: Berksfile, Cheffile, cookbooks/, or metadata.rb not found so Chef will run with effectively no cookbooks. Is this intended?
+I, [2014-08-16T10:17:12.076570 #39326]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2014-08-16T10:17:12.233767 #39326]  INFO -- default-ubuntu-1404: bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+I, [2014-08-16T10:17:12.233938 #39326]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (true)
+I, [2014-08-16T10:17:12.234364 #39326]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:17:12.234433 #39326]  INFO -- default-ubuntu-1404: downloading https://www.getchef.com/chef/install.sh
+I, [2014-08-16T10:17:12.235720 #39326]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:17:12.235783 #39326]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh
+I, [2014-08-16T10:17:12.235832 #39326]  INFO -- default-ubuntu-1404: trying wget...
+Downloading Chef  for ubuntu...I, [2014-08-16T10:17:18.678777 #39326]  INFO -- default-ubuntu-1404: 
+downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64I, [2014-08-16T10:17:18.682375 #39326]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1298/metadata.txtI, [2014-08-16T10:17:18.683018 #39326]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-08-16T10:17:18.683479 #39326]  INFO -- default-ubuntu-1404: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.14.2-1_amd64.debI, [2014-08-16T10:17:24.612281 #39326]  INFO -- default-ubuntu-1404: 
+md5	e6a41d4a2be5ca38f3abacfb3fbd97cbI, [2014-08-16T10:17:24.613563 #39326]  INFO -- default-ubuntu-1404: 
+sha256	I, [2014-08-16T10:17:24.614661 #39326]  INFO -- default-ubuntu-1404: dcf09ee1c600ed0e48ed4d5fa1455582153889d0640bf0b45f572d19b4bb9a9f
+downloaded metadata file looks valid...I, [2014-08-16T10:17:24.620251 #39326]  INFO -- default-ubuntu-1404: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.14.2-1_amd64.debI, [2014-08-16T10:17:24.631121 #39326]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1298/chef_11.14.2-1_amd64.debI, [2014-08-16T10:17:24.631705 #39326]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-08-16T10:17:24.632669 #39326]  INFO -- default-ubuntu-1404: 
+Comparing checksum with sha256sum...I, [2014-08-16T10:18:02.349700 #39326]  INFO -- default-ubuntu-1404: 
+Installing Chef I, [2014-08-16T10:18:02.735201 #39326]  INFO -- default-ubuntu-1404: 
+installing with dpkg...I, [2014-08-16T10:18:02.735691 #39326]  INFO -- default-ubuntu-1404: 
+Selecting previously unselected package chef.I, [2014-08-16T10:18:02.810386 #39326]  INFO -- default-ubuntu-1404: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32352 files and directories currently installed.)I, [2014-08-16T10:18:03.070582 #39326]  INFO -- default-ubuntu-1404: 
+Preparing to unpack .../chef_11.14.2-1_amd64.deb ...I, [2014-08-16T10:18:03.072838 #39326]  INFO -- default-ubuntu-1404: 
+Unpacking chef (11.14.2-1) ...I, [2014-08-16T10:18:03.079723 #39326]  INFO -- default-ubuntu-1404: 
+Setting up chef (11.14.2-1) ...I, [2014-08-16T10:18:11.984313 #39326]  INFO -- default-ubuntu-1404: 
+Thank you for installing Chef!I, [2014-08-16T10:18:12.015176 #39326]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:18:12.059510 #39326]  INFO -- default-ubuntu-1404: bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+I, [2014-08-16T10:18:12.090178 #39326]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2014-08-16T10:18:12.152862 #39326]  INFO -- default-ubuntu-1404: bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+[2014-08-16T01:18:13+00:00] INFO: Forking chef instance to converge...I, [2014-08-16T10:18:13.923608 #39326]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:18:13+00:00] WARN: I, [2014-08-16T10:18:13.932128 #39326]  INFO -- default-ubuntu-1404: 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *I, [2014-08-16T10:18:13.932953 #39326]  INFO -- default-ubuntu-1404: 
+SSL validation of HTTPS requests is disabled. HTTPS connections are stillI, [2014-08-16T10:18:13.933598 #39326]  INFO -- default-ubuntu-1404: 
+encrypted, but chef is not able to detect forged replies or man in the middleI, [2014-08-16T10:18:13.934232 #39326]  INFO -- default-ubuntu-1404: 
+attacks.I, [2014-08-16T10:18:13.934731 #39326]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:18:13.935030 #39326]  INFO -- default-ubuntu-1404: 
+To fix this issue add an entry like this to your configuration file:I, [2014-08-16T10:18:13.935494 #39326]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:18:13.935760 #39326]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:18:13.935809 #39326]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-16T10:18:13.935842 #39326]  INFO -- default-ubuntu-1404:   # Verify all HTTPS connections (recommended)
+I, [2014-08-16T10:18:13.935928 #39326]  INFO -- default-ubuntu-1404:   ssl_verify_mode :verify_peer
+I, [2014-08-16T10:18:13.935957 #39326]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:18:13.935985 #39326]  INFO -- default-ubuntu-1404:   # OR, Verify only connections to chef-server
+I, [2014-08-16T10:18:13.936013 #39326]  INFO -- default-ubuntu-1404:   verify_api_cert true
+I, [2014-08-16T10:18:13.936040 #39326]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-16T10:18:13.936068 #39326]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:18:13.936095 #39326]  INFO -- default-ubuntu-1404: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2014-08-16T10:18:13.936124 #39326]  INFO -- default-ubuntu-1404: `knife ssl check` command like so:
+I, [2014-08-16T10:18:13.936151 #39326]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:18:13.936311 #39326]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-16T10:18:13.936341 #39326]  INFO -- default-ubuntu-1404:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2014-08-16T10:18:13.936369 #39326]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-16T10:18:13.936396 #39326]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:18:13.936423 #39326]  INFO -- default-ubuntu-1404: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2014-08-16T10:18:13.936451 #39326]  INFO -- default-ubuntu-1404: 
+Starting Chef Client, version 11.14.2[0mI, [2014-08-16T10:18:14.014092 #39326]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:18:13+00:00] INFO: *** Chef 11.14.2 ***I, [2014-08-16T10:18:14.014875 #39326]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:18:13+00:00] INFO: Chef-client pid: 1403I, [2014-08-16T10:18:14.015909 #39326]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:18:21+00:00] INFO: Setting the run_list to [] from CLI optionsI, [2014-08-16T10:18:21.442018 #39326]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:18:21+00:00] INFO: Run List is []I, [2014-08-16T10:18:21.447766 #39326]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:18:21+00:00] INFO: Run List expands to []I, [2014-08-16T10:18:21.448454 #39326]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:18:21+00:00] INFO: Starting Chef Run for default-ubuntu-1404I, [2014-08-16T10:18:21.449128 #39326]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:18:21+00:00] INFO: Running start handlersI, [2014-08-16T10:18:21.450150 #39326]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:18:21+00:00] INFO: Start handlers complete.I, [2014-08-16T10:18:21.450971 #39326]  INFO -- default-ubuntu-1404: 
+Compiling Cookbooks...[0mI, [2014-08-16T10:18:21.452741 #39326]  INFO -- default-ubuntu-1404: 
+Converging 0 resources[0mI, [2014-08-16T10:18:21.453970 #39326]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:18:21+00:00] INFO: Chef Run complete in 0.006471002 secondsI, [2014-08-16T10:18:21.455057 #39326]  INFO -- default-ubuntu-1404: 
+[0mI, [2014-08-16T10:18:21.456313 #39326]  INFO -- default-ubuntu-1404: 
+Running handlers:[0mI, [2014-08-16T10:18:21.457305 #39326]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:18:21+00:00] INFO: Running report handlersI, [2014-08-16T10:18:21.458184 #39326]  INFO -- default-ubuntu-1404: 
+Running handlers completeI, [2014-08-16T10:18:21.458925 #39326]  INFO -- default-ubuntu-1404: 
+[0m[2014-08-16T01:18:21+00:00] INFO: Report handlers completeI, [2014-08-16T10:18:21.459732 #39326]  INFO -- default-ubuntu-1404: 
+Chef Client finished, 0/0 resources updated in 7.5368334 seconds[0mI, [2014-08-16T10:18:21.460272 #39326]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:18:21.569864 #39326]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (1m9.49s).
+I, [2014-08-16T10:18:21.582861 #39326]  INFO -- default-ubuntu-1404: -----> Setting up <default-ubuntu-1404>...
+I, [2014-08-16T10:18:21.587476 #39326]  INFO -- default-ubuntu-1404: Finished setting up <default-ubuntu-1404> (0m0.00s).
+I, [2014-08-16T10:18:21.587690 #39326]  INFO -- default-ubuntu-1404: -----> Verifying <default-ubuntu-1404>...
+I, [2014-08-16T10:18:21.589901 #39326]  INFO -- default-ubuntu-1404: Finished verifying <default-ubuntu-1404> (0m0.00s).
+I, [2014-08-16T10:18:21.591677 #39326]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-08-16T10:18:24.687753 #39326]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2014-08-16T10:18:25.873076 #39326]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2014-08-16T10:18:26.234993 #39326]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2014-08-16T10:18:26.236397 #39326]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m4.64s).
+I, [2014-08-16T10:18:26.237105 #39326]  INFO -- default-ubuntu-1404: Finished testing <default-ubuntu-1404> (1m59.45s).
+I, [2014-08-16T10:21:29.624351 #39621]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2014-08-16T10:21:29.624510 #39621]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-08-16T10:21:29.625506 #39621]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m0.00s).
+I, [2014-08-16T10:21:29.625864 #39621]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
+I, [2014-08-16T10:21:29.626049 #39621]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2014-08-16T10:21:31.471797 #39621]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-08-16T10:21:31.831577 #39621]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+[KProgress: 10%[KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[KI, [2014-08-16T10:21:43.932048 #39621]  INFO -- default-ubuntu-1404: ==> default: Matching MAC address for NAT networking...
+I, [2014-08-16T10:21:44.658644 #39621]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1408152104623_19909
+I, [2014-08-16T10:21:44.776009 #39621]  INFO -- default-ubuntu-1404: [0mSkipping Berkshelf with --no-provision[0m
+I, [2014-08-16T10:21:45.193793 #39621]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2014-08-16T10:21:45.241019 #39621]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2014-08-16T10:21:45.287102 #39621]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2014-08-16T10:21:45.287569 #39621]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2014-08-16T10:21:45.326950 #39621]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2014-08-16T10:21:45.401443 #39621]  INFO -- default-ubuntu-1404:     default: 22 => 2200 (adapter 1)
+I, [2014-08-16T10:21:47.673839 #39621]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2014-08-16T10:21:48.010113 #39621]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2014-08-16T10:21:48.401877 #39621]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2200
+I, [2014-08-16T10:21:48.402065 #39621]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2014-08-16T10:21:48.402426 #39621]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2014-08-16T10:22:03.679437 #39621]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2014-08-16T10:22:05.024544 #39621]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2014-08-16T10:22:05.025171 #39621]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2014-08-16T10:22:05.067649 #39621]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2014-08-16T10:22:13.611297 #39621]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2014-08-16T10:22:15.783821 #39621]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2014-08-16T10:22:15.785597 #39621]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m46.16s).
+I, [2014-08-16T10:22:15.785755 #39621]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2014-08-16T10:22:15.787271 #39621]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2014-08-16T10:22:15.788398 #39621]  INFO -- default-ubuntu-1404: Berksfile, Cheffile, cookbooks/, or metadata.rb not found so Chef will run with effectively no cookbooks. Is this intended?
+I, [2014-08-16T10:22:15.789504 #39621]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2014-08-16T10:22:15.911615 #39621]  INFO -- default-ubuntu-1404: bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+I, [2014-08-16T10:22:15.911813 #39621]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (true)
+I, [2014-08-16T10:22:15.912102 #39621]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:22:15.912242 #39621]  INFO -- default-ubuntu-1404: downloading https://www.getchef.com/chef/install.sh
+I, [2014-08-16T10:22:15.912278 #39621]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh
+I, [2014-08-16T10:22:15.912312 #39621]  INFO -- default-ubuntu-1404: trying wget...
+I, [2014-08-16T10:22:15.913192 #39621]  INFO -- default-ubuntu-1404: 
+Downloading Chef  for ubuntu...I, [2014-08-16T10:22:22.281070 #39621]  INFO -- default-ubuntu-1404: 
+downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64I, [2014-08-16T10:22:22.285049 #39621]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1295/metadata.txtI, [2014-08-16T10:22:22.285773 #39621]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-08-16T10:22:22.287013 #39621]  INFO -- default-ubuntu-1404: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.14.2-1_amd64.debI, [2014-08-16T10:22:28.183201 #39621]  INFO -- default-ubuntu-1404: 
+md5	e6a41d4a2be5ca38f3abacfb3fbd97cbI, [2014-08-16T10:22:28.184353 #39621]  INFO -- default-ubuntu-1404: 
+sha256	dcf09ee1c600ed0e48ed4d5fa1455582153889d0640bf0b45f572d19b4bb9a9fI, [2014-08-16T10:22:28.185382 #39621]  INFO -- default-ubuntu-1404: 
+downloaded metadata file looks valid...I, [2014-08-16T10:22:28.190818 #39621]  INFO -- default-ubuntu-1404: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.14.2-1_amd64.debI, [2014-08-16T10:22:28.201144 #39621]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1295/chef_11.14.2-1_amd64.debI, [2014-08-16T10:22:28.201722 #39621]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-08-16T10:22:28.202291 #39621]  INFO -- default-ubuntu-1404: 
+Comparing checksum with sha256sum...I, [2014-08-16T10:22:54.681317 #39621]  INFO -- default-ubuntu-1404: 
+Installing Chef I, [2014-08-16T10:22:54.922817 #39621]  INFO -- default-ubuntu-1404: 
+installing with dpkg...I, [2014-08-16T10:22:54.923538 #39621]  INFO -- default-ubuntu-1404: 
+Selecting previously unselected package chef.I, [2014-08-16T10:22:54.985865 #39621]  INFO -- default-ubuntu-1404: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32352 files and directories currently installed.)I, [2014-08-16T10:22:55.192857 #39621]  INFO -- default-ubuntu-1404: 
+Preparing to unpack .../chef_11.14.2-1_amd64.deb ...I, [2014-08-16T10:22:55.194775 #39621]  INFO -- default-ubuntu-1404: 
+Unpacking chef (11.14.2-1) ...I, [2014-08-16T10:22:55.199898 #39621]  INFO -- default-ubuntu-1404: 
+Setting up chef (11.14.2-1) ...I, [2014-08-16T10:23:02.559342 #39621]  INFO -- default-ubuntu-1404: 
+Thank you for installing Chef!I, [2014-08-16T10:23:02.594565 #39621]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:23:02.631364 #39621]  INFO -- default-ubuntu-1404: bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+I, [2014-08-16T10:23:02.655998 #39621]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2014-08-16T10:23:02.709310 #39621]  INFO -- default-ubuntu-1404: bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+[2014-08-16T01:23:04+00:00] INFO: Forking chef instance to converge...I, [2014-08-16T10:23:04.559143 #39621]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:23:04+00:00] WARN: I, [2014-08-16T10:23:04.565365 #39621]  INFO -- default-ubuntu-1404: 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *I, [2014-08-16T10:23:04.565973 #39621]  INFO -- default-ubuntu-1404: 
+SSL validation of HTTPS requests is disabled. HTTPS connections are stillI, [2014-08-16T10:23:04.566632 #39621]  INFO -- default-ubuntu-1404: 
+encrypted, but chef is not able to detect forged replies or man in the middleI, [2014-08-16T10:23:04.567112 #39621]  INFO -- default-ubuntu-1404: 
+attacks.I, [2014-08-16T10:23:04.567604 #39621]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:23:04.567879 #39621]  INFO -- default-ubuntu-1404: 
+To fix this issue add an entry like this to your configuration file:I, [2014-08-16T10:23:04.568376 #39621]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:23:04.569291 #39621]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:23:04.569363 #39621]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-16T10:23:04.569415 #39621]  INFO -- default-ubuntu-1404:   # Verify all HTTPS connections (recommended)
+I, [2014-08-16T10:23:04.569465 #39621]  INFO -- default-ubuntu-1404:   ssl_verify_mode :verify_peer
+I, [2014-08-16T10:23:04.569513 #39621]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:23:04.569560 #39621]  INFO -- default-ubuntu-1404:   # OR, Verify only connections to chef-server
+I, [2014-08-16T10:23:04.569615 #39621]  INFO -- default-ubuntu-1404:   verify_api_cert true
+I, [2014-08-16T10:23:04.569672 #39621]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-16T10:23:04.569715 #39621]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:23:04.569759 #39621]  INFO -- default-ubuntu-1404: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2014-08-16T10:23:04.569805 #39621]  INFO -- default-ubuntu-1404: `knife ssl check` command like so:
+I, [2014-08-16T10:23:04.569897 #39621]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:23:04.569943 #39621]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-16T10:23:04.569989 #39621]  INFO -- default-ubuntu-1404:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2014-08-16T10:23:04.570035 #39621]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-16T10:23:04.570091 #39621]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:23:04.570141 #39621]  INFO -- default-ubuntu-1404: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2014-08-16T10:23:04.570219 #39621]  INFO -- default-ubuntu-1404: 
+Starting Chef Client, version 11.14.2[0mI, [2014-08-16T10:23:04.657900 #39621]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:23:04+00:00] INFO: *** Chef 11.14.2 ***I, [2014-08-16T10:23:04.658796 #39621]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:23:04+00:00] INFO: Chef-client pid: 1396I, [2014-08-16T10:23:04.659482 #39621]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:23:11+00:00] INFO: Setting the run_list to [] from CLI optionsI, [2014-08-16T10:23:11.940397 #39621]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:23:11+00:00] INFO: Run List is []I, [2014-08-16T10:23:11.945332 #39621]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:23:11+00:00] INFO: Run List expands to []I, [2014-08-16T10:23:11.945903 #39621]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:23:11+00:00] INFO: Starting Chef Run for default-ubuntu-1404I, [2014-08-16T10:23:11.946497 #39621]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:23:11+00:00] INFO: Running start handlersI, [2014-08-16T10:23:11.947322 #39621]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:23:11+00:00] INFO: Start handlers complete.I, [2014-08-16T10:23:11.948123 #39621]  INFO -- default-ubuntu-1404: 
+Compiling Cookbooks...[0mI, [2014-08-16T10:23:11.950535 #39621]  INFO -- default-ubuntu-1404: 
+Converging 0 resources[0mI, [2014-08-16T10:23:11.951722 #39621]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:23:11+00:00] INFO: Chef Run complete in 0.005777629 secondsI, [2014-08-16T10:23:11.952634 #39621]  INFO -- default-ubuntu-1404: 
+[0mI, [2014-08-16T10:23:11.953401 #39621]  INFO -- default-ubuntu-1404: 
+Running handlers:[0mI, [2014-08-16T10:23:11.954052 #39621]  INFO -- default-ubuntu-1404: 
+[2014-08-16T01:23:11+00:00] INFO: Running report handlersI, [2014-08-16T10:23:11.954766 #39621]  INFO -- default-ubuntu-1404: 
+Running handlers completeI, [2014-08-16T10:23:11.955673 #39621]  INFO -- default-ubuntu-1404: 
+[0m[2014-08-16T01:23:11+00:00] INFO: Report handlers completeI, [2014-08-16T10:23:11.956484 #39621]  INFO -- default-ubuntu-1404: 
+Chef Client finished, 0/0 resources updated in 7.399058378 seconds[0mI, [2014-08-16T10:23:11.957364 #39621]  INFO -- default-ubuntu-1404: 
+I, [2014-08-16T10:23:12.101283 #39621]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (0m56.31s).
+I, [2014-08-16T10:23:12.101526 #39621]  INFO -- default-ubuntu-1404: -----> Setting up <default-ubuntu-1404>...
+I, [2014-08-16T10:23:12.103717 #39621]  INFO -- default-ubuntu-1404: Finished setting up <default-ubuntu-1404> (0m0.00s).
+I, [2014-08-16T10:23:12.103877 #39621]  INFO -- default-ubuntu-1404: -----> Verifying <default-ubuntu-1404>...
+I, [2014-08-16T10:23:12.105672 #39621]  INFO -- default-ubuntu-1404: Finished verifying <default-ubuntu-1404> (0m0.00s).
+I, [2014-08-16T10:23:12.106392 #39621]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-08-16T10:23:15.451941 #39621]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2014-08-16T10:23:16.864823 #39621]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2014-08-16T10:23:17.382045 #39621]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2014-08-16T10:23:17.383895 #39621]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m5.28s).
+I, [2014-08-16T10:23:17.384593 #39621]  INFO -- default-ubuntu-1404: Finished testing <default-ubuntu-1404> (1m47.76s).
+I, [2014-08-17T01:00:55.160199 #44691]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2014-08-17T01:00:55.160623 #44691]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-08-17T01:00:55.162604 #44691]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m0.00s).
+I, [2014-08-17T01:00:55.163025 #44691]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
+I, [2014-08-17T01:00:55.163246 #44691]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2014-08-17T01:00:56.957979 #44691]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-08-17T01:00:57.352341 #44691]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+[KProgress: 10%[KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[KI, [2014-08-17T01:01:09.330803 #44691]  INFO -- default-ubuntu-1404: ==> default: Matching MAC address for NAT networking...
+I, [2014-08-17T01:01:10.136697 #44691]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1408204870097_45217
+I, [2014-08-17T01:01:10.251510 #44691]  INFO -- default-ubuntu-1404: [0mSkipping Berkshelf with --no-provision[0m
+I, [2014-08-17T01:01:10.620326 #44691]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2014-08-17T01:01:10.658598 #44691]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2014-08-17T01:01:10.702313 #44691]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2014-08-17T01:01:10.702783 #44691]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2014-08-17T01:01:10.743871 #44691]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2014-08-17T01:01:10.820044 #44691]  INFO -- default-ubuntu-1404:     default: 22 => 2200 (adapter 1)
+I, [2014-08-17T01:01:13.091277 #44691]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2014-08-17T01:01:13.447846 #44691]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2014-08-17T01:01:13.833833 #44691]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2200
+I, [2014-08-17T01:01:13.834144 #44691]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2014-08-17T01:01:13.834366 #44691]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2014-08-17T01:01:29.036675 #44691]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2014-08-17T01:01:30.461684 #44691]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2014-08-17T01:01:30.462738 #44691]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2014-08-17T01:01:30.501439 #44691]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2014-08-17T01:01:38.982962 #44691]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2014-08-17T01:01:41.191458 #44691]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2014-08-17T01:01:41.197098 #44691]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m46.03s).
+I, [2014-08-17T01:01:41.197796 #44691]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2014-08-17T01:01:41.201861 #44691]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2014-08-17T01:01:41.204019 #44691]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 3.1.3...
+I, [2014-08-17T01:01:41.973562 #44691]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2014-08-17T01:01:42.110203 #44691]  INFO -- default-ubuntu-1404: bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+I, [2014-08-17T01:01:42.110331 #44691]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (true)
+I, [2014-08-17T01:01:42.110370 #44691]  INFO -- default-ubuntu-1404: downloading https://www.getchef.com/chef/install.sh
+I, [2014-08-17T01:01:42.110717 #44691]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:01:42.110785 #44691]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh
+I, [2014-08-17T01:01:42.110824 #44691]  INFO -- default-ubuntu-1404: trying wget...
+I, [2014-08-17T01:01:42.111502 #44691]  INFO -- default-ubuntu-1404: 
+Downloading Chef  for ubuntu...I, [2014-08-17T01:01:48.560842 #44691]  INFO -- default-ubuntu-1404: 
+downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64I, [2014-08-17T01:01:48.564058 #44691]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1295/metadata.txtI, [2014-08-17T01:01:48.564812 #44691]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-08-17T01:01:48.565559 #44691]  INFO -- default-ubuntu-1404: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.14.2-1_amd64.debI, [2014-08-17T01:01:54.444143 #44691]  INFO -- default-ubuntu-1404: 
+md5	e6a41d4a2be5ca38f3abacfb3fbd97cbI, [2014-08-17T01:01:54.445146 #44691]  INFO -- default-ubuntu-1404: 
+sha256	dcf09ee1c600ed0e48ed4d5fa1455582153889d0640bf0b45f572d19b4bb9a9fI, [2014-08-17T01:01:54.446406 #44691]  INFO -- default-ubuntu-1404: 
+downloaded metadata file looks valid...I, [2014-08-17T01:01:54.450749 #44691]  INFO -- default-ubuntu-1404: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.14.2-1_amd64.debI, [2014-08-17T01:01:54.459816 #44691]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1295/chef_11.14.2-1_amd64.debI, [2014-08-17T01:01:54.460384 #44691]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-08-17T01:01:54.460840 #44691]  INFO -- default-ubuntu-1404: 
+Comparing checksum with sha256sum...I, [2014-08-17T01:02:29.194528 #44691]  INFO -- default-ubuntu-1404: 
+Installing Chef I, [2014-08-17T01:02:29.451693 #44691]  INFO -- default-ubuntu-1404: 
+installing with dpkg...I, [2014-08-17T01:02:29.452423 #44691]  INFO -- default-ubuntu-1404: 
+Selecting previously unselected package chef.I, [2014-08-17T01:02:29.513722 #44691]  INFO -- default-ubuntu-1404: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32352 files and directories currently installed.)I, [2014-08-17T01:02:29.733793 #44691]  INFO -- default-ubuntu-1404: 
+Preparing to unpack .../chef_11.14.2-1_amd64.deb ...I, [2014-08-17T01:02:29.735983 #44691]  INFO -- default-ubuntu-1404: 
+Unpacking chef (11.14.2-1) ...I, [2014-08-17T01:02:29.740433 #44691]  INFO -- default-ubuntu-1404: 
+Setting up chef (11.14.2-1) ...I, [2014-08-17T01:02:36.825676 #44691]  INFO -- default-ubuntu-1404: 
+Thank you for installing Chef!I, [2014-08-17T01:02:36.857002 #44691]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:02:36.892531 #44691]  INFO -- default-ubuntu-1404: bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+I, [2014-08-17T01:02:36.921310 #44691]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2014-08-17T01:02:37.659728 #44691]  INFO -- default-ubuntu-1404: bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+[2014-08-16T16:02:39+00:00] INFO: Forking chef instance to converge...I, [2014-08-17T01:02:39.091745 #44691]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:02:39+00:00] WARN: I, [2014-08-17T01:02:39.102754 #44691]  INFO -- default-ubuntu-1404: 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *I, [2014-08-17T01:02:39.103235 #44691]  INFO -- default-ubuntu-1404: 
+SSL validation of HTTPS requests is disabled. HTTPS connections are stillI, [2014-08-17T01:02:39.103766 #44691]  INFO -- default-ubuntu-1404: 
+encrypted, but chef is not able to detect forged replies or man in the middleI, [2014-08-17T01:02:39.104222 #44691]  INFO -- default-ubuntu-1404: 
+attacks.I, [2014-08-17T01:02:39.104697 #44691]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:02:39.104989 #44691]  INFO -- default-ubuntu-1404: 
+To fix this issue add an entry like this to your configuration file:I, [2014-08-17T01:02:39.105536 #44691]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:02:39.105786 #44691]  INFO -- default-ubuntu-1404: 
+```I, [2014-08-17T01:02:39.106862 #44691]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:02:39.106944 #44691]  INFO -- default-ubuntu-1404:   # Verify all HTTPS connections (recommended)
+I, [2014-08-17T01:02:39.107000 #44691]  INFO -- default-ubuntu-1404:   ssl_verify_mode :verify_peer
+I, [2014-08-17T01:02:39.107052 #44691]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:02:39.107144 #44691]  INFO -- default-ubuntu-1404:   # OR, Verify only connections to chef-server
+I, [2014-08-17T01:02:39.107204 #44691]  INFO -- default-ubuntu-1404:   verify_api_cert true
+I, [2014-08-17T01:02:39.107250 #44691]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-17T01:02:39.107297 #44691]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:02:39.107343 #44691]  INFO -- default-ubuntu-1404: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2014-08-17T01:02:39.107392 #44691]  INFO -- default-ubuntu-1404: `knife ssl check` command like so:
+I, [2014-08-17T01:02:39.107438 #44691]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:02:39.107482 #44691]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-17T01:02:39.107529 #44691]  INFO -- default-ubuntu-1404:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2014-08-17T01:02:39.107576 #44691]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-17T01:02:39.107622 #44691]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:02:39.107669 #44691]  INFO -- default-ubuntu-1404: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2014-08-17T01:02:39.107718 #44691]  INFO -- default-ubuntu-1404: 
+Starting Chef Client, version 11.14.2[0mI, [2014-08-17T01:02:39.188571 #44691]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:02:39+00:00] INFO: *** Chef 11.14.2 ***I, [2014-08-17T01:02:39.189254 #44691]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:02:39+00:00] INFO: Chef-client pid: 1396I, [2014-08-17T01:02:39.189909 #44691]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:02:46+00:00] INFO: Setting the run_list to [] from CLI optionsI, [2014-08-17T01:02:46.379382 #44691]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:02:46+00:00] INFO: Run List is []I, [2014-08-17T01:02:46.384214 #44691]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:02:46+00:00] INFO: Run List expands to []I, [2014-08-17T01:02:46.384718 #44691]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:02:46+00:00] INFO: Starting Chef Run for default-ubuntu-1404I, [2014-08-17T01:02:46.385434 #44691]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:02:46+00:00] INFO: Running start handlersI, [2014-08-17T01:02:46.386124 #44691]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:02:46+00:00] INFO: Start handlers complete.I, [2014-08-17T01:02:46.386792 #44691]  INFO -- default-ubuntu-1404: 
+Compiling Cookbooks...[0mI, [2014-08-17T01:02:46.400491 #44691]  INFO -- default-ubuntu-1404: 
+Converging 0 resources[0mI, [2014-08-17T01:02:46.401679 #44691]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:02:46+00:00] INFO: Chef Run complete in 0.017099404 secondsI, [2014-08-17T01:02:46.402593 #44691]  INFO -- default-ubuntu-1404: 
+[0mI, [2014-08-17T01:02:46.403578 #44691]  INFO -- default-ubuntu-1404: 
+Running handlers:[0mI, [2014-08-17T01:02:46.404404 #44691]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:02:46+00:00] INFO: Running report handlersI, [2014-08-17T01:02:46.404879 #44691]  INFO -- default-ubuntu-1404: 
+Running handlers completeI, [2014-08-17T01:02:46.405490 #44691]  INFO -- default-ubuntu-1404: 
+[0m[2014-08-16T16:02:46+00:00] INFO: Report handlers completeI, [2014-08-17T01:02:46.406295 #44691]  INFO -- default-ubuntu-1404: 
+Chef Client finished, 0/0 resources updated in 7.316226513 seconds[0mI, [2014-08-17T01:02:46.407036 #44691]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:02:47.088443 #44691]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (1m5.89s).
+I, [2014-08-17T01:02:47.088637 #44691]  INFO -- default-ubuntu-1404: -----> Setting up <default-ubuntu-1404>...
+I, [2014-08-17T01:02:47.090864 #44691]  INFO -- default-ubuntu-1404: Finished setting up <default-ubuntu-1404> (0m0.00s).
+I, [2014-08-17T01:02:47.091039 #44691]  INFO -- default-ubuntu-1404: -----> Verifying <default-ubuntu-1404>...
+I, [2014-08-17T01:02:47.093135 #44691]  INFO -- default-ubuntu-1404: Finished verifying <default-ubuntu-1404> (0m0.00s).
+I, [2014-08-17T01:02:47.093787 #44691]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-08-17T01:02:50.071230 #44691]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2014-08-17T01:02:51.242610 #44691]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2014-08-17T01:02:51.587807 #44691]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2014-08-17T01:02:51.589240 #44691]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m4.49s).
+I, [2014-08-17T01:02:51.589634 #44691]  INFO -- default-ubuntu-1404: Finished testing <default-ubuntu-1404> (1m56.43s).
+I, [2014-08-17T01:05:01.731600 #45619]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2014-08-17T01:05:01.731804 #45619]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-08-17T01:05:01.732828 #45619]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m0.00s).
+I, [2014-08-17T01:05:01.733105 #45619]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
+I, [2014-08-17T01:05:01.733367 #45619]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2014-08-17T01:05:03.407544 #45619]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-08-17T01:05:03.754313 #45619]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+[KProgress: 10%[KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[KI, [2014-08-17T01:05:16.534668 #45619]  INFO -- default-ubuntu-1404: ==> default: Matching MAC address for NAT networking...
+I, [2014-08-17T01:05:17.416260 #45619]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1408205117354_65840
+I, [2014-08-17T01:05:17.555279 #45619]  INFO -- default-ubuntu-1404: [0mSkipping Berkshelf with --no-provision[0m
+I, [2014-08-17T01:05:17.984185 #45619]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2014-08-17T01:05:18.023743 #45619]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2014-08-17T01:05:18.066075 #45619]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2014-08-17T01:05:18.066573 #45619]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2014-08-17T01:05:18.107927 #45619]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2014-08-17T01:05:18.178987 #45619]  INFO -- default-ubuntu-1404:     default: 22 => 2200 (adapter 1)
+I, [2014-08-17T01:05:20.452747 #45619]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2014-08-17T01:05:20.747292 #45619]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2014-08-17T01:05:21.149904 #45619]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2200
+I, [2014-08-17T01:05:21.150193 #45619]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2014-08-17T01:05:21.150581 #45619]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2014-08-17T01:05:36.365134 #45619]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2014-08-17T01:05:37.761824 #45619]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2014-08-17T01:05:37.763829 #45619]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2014-08-17T01:05:37.805770 #45619]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2014-08-17T01:05:46.143921 #45619]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2014-08-17T01:05:48.323244 #45619]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2014-08-17T01:05:48.328888 #45619]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m46.59s).
+I, [2014-08-17T01:05:48.330376 #45619]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2014-08-17T01:05:48.334471 #45619]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2014-08-17T01:05:48.336543 #45619]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 3.1.3...
+I, [2014-08-17T01:05:49.249081 #45619]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2014-08-17T01:05:49.386957 #45619]  INFO -- default-ubuntu-1404: bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+I, [2014-08-17T01:05:49.387071 #45619]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (true)
+I, [2014-08-17T01:05:49.387114 #45619]  INFO -- default-ubuntu-1404: downloading https://www.getchef.com/chef/install.sh
+I, [2014-08-17T01:05:49.387213 #45619]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh
+I, [2014-08-17T01:05:49.387267 #45619]  INFO -- default-ubuntu-1404: trying wget...
+I, [2014-08-17T01:05:49.387977 #45619]  INFO -- default-ubuntu-1404: 
+Downloading Chef  for ubuntu...I, [2014-08-17T01:05:55.947346 #45619]  INFO -- default-ubuntu-1404: 
+downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64I, [2014-08-17T01:05:55.950660 #45619]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1295/metadata.txtI, [2014-08-17T01:05:55.951231 #45619]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-08-17T01:05:55.951892 #45619]  INFO -- default-ubuntu-1404: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.14.2-1_amd64.debI, [2014-08-17T01:06:02.095397 #45619]  INFO -- default-ubuntu-1404: 
+md5	e6a41d4a2be5ca38f3abacfb3fbd97cbI, [2014-08-17T01:06:02.096353 #45619]  INFO -- default-ubuntu-1404: 
+sha256	dcf09ee1c600ed0e48ed4d5fa1455582153889d0640bf0b45f572d19b4bb9a9fI, [2014-08-17T01:06:02.097909 #45619]  INFO -- default-ubuntu-1404: 
+downloaded metadata file looks valid...I, [2014-08-17T01:06:02.102406 #45619]  INFO -- default-ubuntu-1404: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.14.2-1_amd64.debI, [2014-08-17T01:06:02.111428 #45619]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1295/chef_11.14.2-1_amd64.debI, [2014-08-17T01:06:02.111968 #45619]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-08-17T01:06:02.112423 #45619]  INFO -- default-ubuntu-1404: 
+Comparing checksum with sha256sum...I, [2014-08-17T01:06:40.801610 #45619]  INFO -- default-ubuntu-1404: 
+Installing Chef I, [2014-08-17T01:06:41.131917 #45619]  INFO -- default-ubuntu-1404: 
+installing with dpkg...I, [2014-08-17T01:06:41.133108 #45619]  INFO -- default-ubuntu-1404: 
+Selecting previously unselected package chef.I, [2014-08-17T01:06:41.200965 #45619]  INFO -- default-ubuntu-1404: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32352 files and directories currently installed.)I, [2014-08-17T01:06:41.427447 #45619]  INFO -- default-ubuntu-1404: 
+Preparing to unpack .../chef_11.14.2-1_amd64.deb ...I, [2014-08-17T01:06:41.429796 #45619]  INFO -- default-ubuntu-1404: 
+Unpacking chef (11.14.2-1) ...I, [2014-08-17T01:06:41.434162 #45619]  INFO -- default-ubuntu-1404: 
+Setting up chef (11.14.2-1) ...I, [2014-08-17T01:06:51.251412 #45619]  INFO -- default-ubuntu-1404: 
+Thank you for installing Chef!I, [2014-08-17T01:06:51.282128 #45619]  INFO -- default-ubuntu-1404: 
+bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)I, [2014-08-17T01:06:51.349486 #45619]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:06:51.378108 #45619]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2014-08-17T01:06:52.317697 #45619]  INFO -- default-ubuntu-1404: bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+[2014-08-16T16:06:53+00:00] INFO: Forking chef instance to converge...I, [2014-08-17T01:06:53.892119 #45619]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:06:53+00:00] WARN: I, [2014-08-17T01:06:53.900976 #45619]  INFO -- default-ubuntu-1404: 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *I, [2014-08-17T01:06:53.901715 #45619]  INFO -- default-ubuntu-1404: 
+SSL validation of HTTPS requests is disabled. HTTPS connections are stillI, [2014-08-17T01:06:53.903020 #45619]  INFO -- default-ubuntu-1404: 
+encrypted, but chef is not able to detect forged replies or man in the middleI, [2014-08-17T01:06:53.903666 #45619]  INFO -- default-ubuntu-1404: 
+attacks.I, [2014-08-17T01:06:53.904351 #45619]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:06:53.904678 #45619]  INFO -- default-ubuntu-1404: 
+To fix this issue add an entry like this to your configuration file:I, [2014-08-17T01:06:53.905530 #45619]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:06:53.905852 #45619]  INFO -- default-ubuntu-1404: 
+```I, [2014-08-17T01:06:53.906437 #45619]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:06:53.907773 #45619]  INFO -- default-ubuntu-1404:   # Verify all HTTPS connections (recommended)
+I, [2014-08-17T01:06:53.907848 #45619]  INFO -- default-ubuntu-1404:   ssl_verify_mode :verify_peer
+I, [2014-08-17T01:06:53.907890 #45619]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:06:53.907936 #45619]  INFO -- default-ubuntu-1404:   # OR, Verify only connections to chef-server
+I, [2014-08-17T01:06:53.907971 #45619]  INFO -- default-ubuntu-1404:   verify_api_cert true
+I, [2014-08-17T01:06:53.908057 #45619]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-17T01:06:53.908103 #45619]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:06:53.908136 #45619]  INFO -- default-ubuntu-1404: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2014-08-17T01:06:53.908167 #45619]  INFO -- default-ubuntu-1404: `knife ssl check` command like so:
+I, [2014-08-17T01:06:53.908197 #45619]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:06:53.908225 #45619]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-17T01:06:53.908253 #45619]  INFO -- default-ubuntu-1404:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2014-08-17T01:06:53.908282 #45619]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-17T01:06:53.908309 #45619]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:06:53.908346 #45619]  INFO -- default-ubuntu-1404: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2014-08-17T01:06:53.908375 #45619]  INFO -- default-ubuntu-1404: 
+Starting Chef Client, version 11.14.2[0mI, [2014-08-17T01:06:54.005732 #45619]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:06:54+00:00] INFO: *** Chef 11.14.2 ***I, [2014-08-17T01:06:54.007108 #45619]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:06:54+00:00] INFO: Chef-client pid: 1400I, [2014-08-17T01:06:54.007792 #45619]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:07:01+00:00] INFO: Setting the run_list to [] from CLI optionsI, [2014-08-17T01:07:01.191006 #45619]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:07:01+00:00] INFO: Run List is []I, [2014-08-17T01:07:01.195822 #45619]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:07:01+00:00] INFO: Run List expands to []I, [2014-08-17T01:07:01.196615 #45619]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:07:01+00:00] INFO: Starting Chef Run for default-ubuntu-1404I, [2014-08-17T01:07:01.197184 #45619]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:07:01+00:00] INFO: Running start handlersI, [2014-08-17T01:07:01.197963 #45619]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:07:01+00:00] INFO: Start handlers complete.I, [2014-08-17T01:07:01.198767 #45619]  INFO -- default-ubuntu-1404: 
+Compiling Cookbooks...[0mI, [2014-08-17T01:07:01.212925 #45619]  INFO -- default-ubuntu-1404: 
+Converging 0 resources[0mI, [2014-08-17T01:07:01.214712 #45619]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:07:01+00:00] INFO: Chef Run complete in 0.018631952 secondsI, [2014-08-17T01:07:01.215733 #45619]  INFO -- default-ubuntu-1404: 
+[0mI, [2014-08-17T01:07:01.216477 #45619]  INFO -- default-ubuntu-1404: 
+Running handlers:[0mI, [2014-08-17T01:07:01.217053 #45619]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:07:01+00:00] INFO: Running report handlersI, [2014-08-17T01:07:01.217942 #45619]  INFO -- default-ubuntu-1404: 
+Running handlers completeI, [2014-08-17T01:07:01.218489 #45619]  INFO -- default-ubuntu-1404: 
+[0m[2014-08-16T16:07:01+00:00] INFO: Report handlers completeI, [2014-08-17T01:07:01.219359 #45619]  INFO -- default-ubuntu-1404: 
+Chef Client finished, 0/0 resources updated in 7.327940199 seconds[0mI, [2014-08-17T01:07:01.220195 #45619]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:07:01.355698 #45619]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (1m13.02s).
+I, [2014-08-17T01:07:01.355961 #45619]  INFO -- default-ubuntu-1404: -----> Setting up <default-ubuntu-1404>...
+I, [2014-08-17T01:07:01.357841 #45619]  INFO -- default-ubuntu-1404: Finished setting up <default-ubuntu-1404> (0m0.00s).
+I, [2014-08-17T01:07:01.358090 #45619]  INFO -- default-ubuntu-1404: -----> Verifying <default-ubuntu-1404>...
+I, [2014-08-17T01:07:01.360003 #45619]  INFO -- default-ubuntu-1404: Finished verifying <default-ubuntu-1404> (0m0.00s).
+I, [2014-08-17T01:07:01.360932 #45619]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-08-17T01:07:04.491770 #45619]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2014-08-17T01:07:05.625017 #45619]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2014-08-17T01:07:05.989679 #45619]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2014-08-17T01:07:05.991100 #45619]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m4.63s).
+I, [2014-08-17T01:07:05.991486 #45619]  INFO -- default-ubuntu-1404: Finished testing <default-ubuntu-1404> (2m4.26s).
+I, [2014-08-17T01:08:26.715826 #45895]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2014-08-17T01:08:26.716015 #45895]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-08-17T01:08:26.717097 #45895]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m0.00s).
+I, [2014-08-17T01:08:26.717375 #45895]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
+I, [2014-08-17T01:08:26.717570 #45895]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2014-08-17T01:08:28.284404 #45895]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-08-17T01:08:28.674984 #45895]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+[KProgress: 10%[KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[KI, [2014-08-17T01:08:40.914734 #45895]  INFO -- default-ubuntu-1404: ==> default: Matching MAC address for NAT networking...
+I, [2014-08-17T01:08:41.589429 #45895]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1408205321557_66613
+I, [2014-08-17T01:08:41.750400 #45895]  INFO -- default-ubuntu-1404: [0mSkipping Berkshelf with --no-provision[0m
+I, [2014-08-17T01:08:42.104630 #45895]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2014-08-17T01:08:42.145067 #45895]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2014-08-17T01:08:42.189736 #45895]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2014-08-17T01:08:42.190374 #45895]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2014-08-17T01:08:42.230312 #45895]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2014-08-17T01:08:42.305935 #45895]  INFO -- default-ubuntu-1404:     default: 22 => 2200 (adapter 1)
+I, [2014-08-17T01:08:44.574006 #45895]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2014-08-17T01:08:44.863396 #45895]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2014-08-17T01:08:45.280894 #45895]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2200
+I, [2014-08-17T01:08:45.281090 #45895]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2014-08-17T01:08:45.281527 #45895]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2014-08-17T01:09:00.491691 #45895]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2014-08-17T01:09:01.882113 #45895]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2014-08-17T01:09:01.882912 #45895]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2014-08-17T01:09:01.918219 #45895]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2014-08-17T01:09:10.176135 #45895]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2014-08-17T01:09:12.392295 #45895]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2014-08-17T01:09:12.400664 #45895]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m45.68s).
+I, [2014-08-17T01:09:12.401464 #45895]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2014-08-17T01:09:12.405116 #45895]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2014-08-17T01:09:12.406868 #45895]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 3.1.3...
+I, [2014-08-17T01:09:13.322427 #45895]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2014-08-17T01:09:13.482637 #45895]  INFO -- default-ubuntu-1404: bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+-----> Installing Chef Omnibus (true)I, [2014-08-17T01:09:13.485449 #45895]  INFO -- default-ubuntu-1404: 
+downloading https://www.getchef.com/chef/install.shI, [2014-08-17T01:09:13.486532 #45895]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.shI, [2014-08-17T01:09:13.487313 #45895]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-08-17T01:09:13.488253 #45895]  INFO -- default-ubuntu-1404: 
+Downloading Chef  for ubuntu...I, [2014-08-17T01:09:19.632264 #45895]  INFO -- default-ubuntu-1404: 
+downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64I, [2014-08-17T01:09:19.637311 #45895]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1295/metadata.txtI, [2014-08-17T01:09:19.637966 #45895]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-08-17T01:09:19.639022 #45895]  INFO -- default-ubuntu-1404: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.14.2-1_amd64.debI, [2014-08-17T01:09:25.634871 #45895]  INFO -- default-ubuntu-1404: 
+md5	e6a41d4a2be5ca38f3abacfb3fbd97cbI, [2014-08-17T01:09:25.635856 #45895]  INFO -- default-ubuntu-1404: 
+sha256	dcf09ee1c600ed0e48ed4d5fa1455582153889d0640bf0b45f572d19b4bb9a9fI, [2014-08-17T01:09:25.637089 #45895]  INFO -- default-ubuntu-1404: 
+downloaded metadata file looks valid...I, [2014-08-17T01:09:25.642463 #45895]  INFO -- default-ubuntu-1404: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.14.2-1_amd64.debI, [2014-08-17T01:09:25.653363 #45895]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1295/chef_11.14.2-1_amd64.debI, [2014-08-17T01:09:25.654139 #45895]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-08-17T01:09:25.654624 #45895]  INFO -- default-ubuntu-1404: 
+Comparing checksum with sha256sum...I, [2014-08-17T01:09:51.304846 #45895]  INFO -- default-ubuntu-1404: 
+Installing Chef I, [2014-08-17T01:09:51.704056 #45895]  INFO -- default-ubuntu-1404: 
+installing with dpkg...I, [2014-08-17T01:09:51.704551 #45895]  INFO -- default-ubuntu-1404: 
+Selecting previously unselected package chef.I, [2014-08-17T01:09:51.778881 #45895]  INFO -- default-ubuntu-1404: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32352 files and directories currently installed.)I, [2014-08-17T01:09:52.096231 #45895]  INFO -- default-ubuntu-1404: 
+Preparing to unpack .../chef_11.14.2-1_amd64.deb ...I, [2014-08-17T01:09:52.097805 #45895]  INFO -- default-ubuntu-1404: 
+Unpacking chef (11.14.2-1) ...I, [2014-08-17T01:09:52.104606 #45895]  INFO -- default-ubuntu-1404: 
+Setting up chef (11.14.2-1) ...I, [2014-08-17T01:09:59.525405 #45895]  INFO -- default-ubuntu-1404: 
+Thank you for installing Chef!I, [2014-08-17T01:09:59.559691 #45895]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:09:59.598691 #45895]  INFO -- default-ubuntu-1404: bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+I, [2014-08-17T01:09:59.624397 #45895]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2014-08-17T01:10:00.361126 #45895]  INFO -- default-ubuntu-1404: bash: warning: setlocale: LC_ALL: cannot change locale (ja_JP.UTF-8)
+[2014-08-16T16:10:01+00:00] INFO: Forking chef instance to converge...I, [2014-08-17T01:10:01.828897 #45895]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:10:01+00:00] WARN: I, [2014-08-17T01:10:01.836927 #45895]  INFO -- default-ubuntu-1404: 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *I, [2014-08-17T01:10:01.837508 #45895]  INFO -- default-ubuntu-1404: 
+SSL validation of HTTPS requests is disabled. HTTPS connections are stillI, [2014-08-17T01:10:01.838033 #45895]  INFO -- default-ubuntu-1404: 
+encrypted, but chef is not able to detect forged replies or man in the middleI, [2014-08-17T01:10:01.838529 #45895]  INFO -- default-ubuntu-1404: 
+attacks.I, [2014-08-17T01:10:01.839051 #45895]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:10:01.839268 #45895]  INFO -- default-ubuntu-1404: 
+To fix this issue add an entry like this to your configuration file:I, [2014-08-17T01:10:01.839714 #45895]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:10:01.840545 #45895]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:10:01.840614 #45895]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-17T01:10:01.840666 #45895]  INFO -- default-ubuntu-1404:   # Verify all HTTPS connections (recommended)
+I, [2014-08-17T01:10:01.840713 #45895]  INFO -- default-ubuntu-1404:   ssl_verify_mode :verify_peer
+I, [2014-08-17T01:10:01.840762 #45895]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:10:01.840809 #45895]  INFO -- default-ubuntu-1404:   # OR, Verify only connections to chef-server
+I, [2014-08-17T01:10:01.840854 #45895]  INFO -- default-ubuntu-1404:   verify_api_cert true
+I, [2014-08-17T01:10:01.840956 #45895]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-17T01:10:01.841034 #45895]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:10:01.841082 #45895]  INFO -- default-ubuntu-1404: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2014-08-17T01:10:01.841152 #45895]  INFO -- default-ubuntu-1404: `knife ssl check` command like so:
+I, [2014-08-17T01:10:01.841211 #45895]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:10:01.841258 #45895]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-17T01:10:01.841304 #45895]  INFO -- default-ubuntu-1404:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2014-08-17T01:10:01.841351 #45895]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-17T01:10:01.841397 #45895]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:10:01.841443 #45895]  INFO -- default-ubuntu-1404: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2014-08-17T01:10:01.841491 #45895]  INFO -- default-ubuntu-1404: 
+Starting Chef Client, version 11.14.2[0mI, [2014-08-17T01:10:01.920963 #45895]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:10:01+00:00] INFO: *** Chef 11.14.2 ***I, [2014-08-17T01:10:01.921885 #45895]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:10:01+00:00] INFO: Chef-client pid: 1396I, [2014-08-17T01:10:01.922713 #45895]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:10:09+00:00] INFO: Setting the run_list to ["recipe[mysql]", "recipe[nginx]"] from CLI optionsI, [2014-08-17T01:10:08.950820 #45895]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:10:09+00:00] INFO: Run List is [recipe[mysql], recipe[nginx]]I, [2014-08-17T01:10:08.955840 #45895]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:10:09+00:00] INFO: Run List expands to [mysql, nginx]I, [2014-08-17T01:10:08.956355 #45895]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:10:09+00:00] INFO: Starting Chef Run for default-ubuntu-1404I, [2014-08-17T01:10:08.957074 #45895]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:10:09+00:00] INFO: Running start handlersI, [2014-08-17T01:10:08.957860 #45895]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:10:09+00:00] INFO: Start handlers complete.I, [2014-08-17T01:10:08.958730 #45895]  INFO -- default-ubuntu-1404: 
+Compiling Cookbooks...[0mI, [2014-08-17T01:10:08.974724 #45895]  INFO -- default-ubuntu-1404: 
+[0mI, [2014-08-17T01:10:09.241314 #45895]  INFO -- default-ubuntu-1404: 
+================================================================================[0mI, [2014-08-17T01:10:09.242369 #45895]  INFO -- default-ubuntu-1404: 
+[31mRecipe Compile Error[0mI, [2014-08-17T01:10:09.243442 #45895]  INFO -- default-ubuntu-1404: 
+================================================================================[0mI, [2014-08-17T01:10:09.244236 #45895]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:10:09.244648 #45895]  INFO -- default-ubuntu-1404: 
+[0mChef::Exceptions::RecipeNotFound[0mI, [2014-08-17T01:10:09.245768 #45895]  INFO -- default-ubuntu-1404: 
+--------------------------------[0mI, [2014-08-17T01:10:09.246289 #45895]  INFO -- default-ubuntu-1404: 
+could not find recipe default for cookbook mysql[0mI, [2014-08-17T01:10:09.246957 #45895]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:10:09.247478 #45895]  INFO -- default-ubuntu-1404: 
+[0m[0mI, [2014-08-17T01:10:09.248445 #45895]  INFO -- default-ubuntu-1404: 
+Running handlers:[0mI, [2014-08-17T01:10:09.249102 #45895]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:10:09+00:00] ERROR: Running exception handlersI, [2014-08-17T01:10:09.250097 #45895]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:10:09.250176 #45895]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2014-08-17T01:10:09.251036 #45895]  INFO -- default-ubuntu-1404: 
+I, [2014-08-17T01:10:09.251113 #45895]  INFO -- default-ubuntu-1404: [0m[2014-08-16T16:10:09+00:00] ERROR: Exception handlers complete
+[2014-08-16T16:10:09+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.outI, [2014-08-17T01:10:09.251845 #45895]  INFO -- default-ubuntu-1404: 
+Chef Client failed. 0 resources updated in 7.424429276 seconds[0mI, [2014-08-17T01:10:09.252777 #45895]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:10:09+00:00] ERROR: could not find recipe default for cookbook mysqlI, [2014-08-17T01:10:09.274723 #45895]  INFO -- default-ubuntu-1404: 
+[2014-08-16T16:10:09+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)I, [2014-08-17T01:10:09.332758 #45895]  INFO -- default-ubuntu-1404: 
+E, [2014-08-17T01:10:09.399334 #45895] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2014-08-17T01:10:09.399527 #45895] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2014-08-17T01:10:09.399562 #45895] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2014-08-17T01:10:09.399589 #45895] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-08-17T01:10:09.399615 #45895] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2014-08-17T01:10:09.399640 #45895] ERROR -- default-ubuntu-1404: Class: Kitchen::SSHFailed
+E, [2014-08-17T01:10:09.399665 #45895] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-08-17T01:10:09.399691 #45895] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2014-08-17T01:10:09.399717 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:118:in `rescue in run_remote'
+E, [2014-08-17T01:10:09.399743 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:114:in `run_remote'
+E, [2014-08-17T01:10:09.399769 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:48:in `block in converge'
+E, [2014-08-17T01:10:09.399796 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-08-17T01:10:09.399866 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:43:in `new'
+E, [2014-08-17T01:10:09.399892 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:43:in `converge'
+E, [2014-08-17T01:10:09.399918 #45895] ERROR -- default-ubuntu-1404: /Users/katagiri/.chefdk/gem/ruby/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-08-17T01:10:09.399944 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:280:in `public_send'
+E, [2014-08-17T01:10:09.399970 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:280:in `block in perform_action'
+E, [2014-08-17T01:10:09.399996 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:315:in `call'
+E, [2014-08-17T01:10:09.400021 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:315:in `synchronize_or_call'
+E, [2014-08-17T01:10:09.400048 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:290:in `block in action'
+E, [2014-08-17T01:10:09.400074 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-08-17T01:10:09.400100 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:289:in `action'
+E, [2014-08-17T01:10:09.400126 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:280:in `perform_action'
+E, [2014-08-17T01:10:09.400152 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:263:in `converge_action'
+E, [2014-08-17T01:10:09.400178 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:253:in `block in transition_to'
+E, [2014-08-17T01:10:09.400218 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:252:in `each'
+E, [2014-08-17T01:10:09.400246 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:252:in `transition_to'
+E, [2014-08-17T01:10:09.400272 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-08-17T01:10:09.400298 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-08-17T01:10:09.400323 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-08-17T01:10:09.400349 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:166:in `test'
+E, [2014-08-17T01:10:09.400412 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-08-17T01:10:09.400439 #45895] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-08-17T01:10:09.400465 #45895] ERROR -- default-ubuntu-1404: ----------------------

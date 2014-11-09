@@ -1,0 +1,7 @@
+zend_extension=xdebug.so
+xdebug.remote_host=<%= node['php-env']['xdebug']['host'] %>
+xdebug.remote_port=<%= node['php-env']['xdebug']['port'] %>
+xdebug.remote_enable=On
+xdebug.remote_connect_back=On
+xdebug.remote_handler=dbgp
+xdebug.remote_log=/var/log/xdebug.log
