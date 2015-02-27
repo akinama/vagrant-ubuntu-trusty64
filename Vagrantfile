@@ -25,16 +25,18 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   # config.vm.network "forwarded_port", guest: 80, host: 8080
+  config.vm.network :forwarded_port, host: 2202, guest: 22
+  config.ssh.port = 2202
+  config.vm.usable_port_range = 2210..2250
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-  config.vm.network "private_network", ip: "192.168.33.12"
-  config.ssh.port = 2202
+  config.vm.network :private_network, ip: "192.168.33.12"
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
-  # config.vm.network "public_network"
+  # config.vm.network :public_network
 
   # If true, then any SSH connections made will enable agent forwarding.
   # Default value: false
@@ -44,20 +46,20 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  # config.vm.synced_folder "../data", "/vagrant_data"
+  config.vm.synced_folder ".", "/vagrant", nfs: true
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
   #
-  # config.vm.provider "virtualbox" do |vb|
-  #   # Don't boot with headless mode
-  #   vb.gui = true
-  #
-  #   # Use VBoxManage to customize the VM. For example to change memory:
-  #   vb.customize ["modifyvm", :id, "--memory", "1024"]
-  # end
-  #
+  config.vm.provider :virtualbox do |vb|
+    # Don't boot with headless mode
+    # vb.gui = true
+
+    # Use VBoxManage to customize the VM. For example to change memory:
+    vb.customize ["modifyvm", :id, "--memory", "1024"]
+  end
+
   # View the documentation for the provider you're using for more
   # information on available options.
 
@@ -91,8 +93,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # path, and data_bags path (all relative to this Vagrantfile), and adding
   # some recipes and/or roles.
   #
-  config.vm.provision "shell", inline: "sudo apt-get update"
-  config.vm.provision "chef_solo" do |chef|
+  config.vm.provision :shell, inline: "sudo apt-get update"
+  config.vm.provision :shell, inline: "sudo dd if=/dev/zero of=/swapfile bs=1024 count=2048K"
+  config.vm.provision :shell, inline: "sudo mkswap /swapfile"
+  config.vm.provision :shell, inline: "sudo swapon /swapfile"
+  config.vm.provision :shell, inline: "sudo sh -c \"echo '/swapfile swap swap defaults 0 0' >> /etc/fstab\""
+  config.vm.provision :shell, inline: "sudo apt-get install -y language-pack-ja"
+  config.vm.provision :chef_solo do |chef|
     chef.log_level = :debug
     chef.cookbooks_path = ["berks-cookbooks", "site-cookbooks"]
   
@@ -114,6 +121,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       recipe[nodejs]
     )
   end
+  config.vm.provision :shell, inline: "curl -sS https://getcomposer.org/installer | php; sudo mv composer.phar /usr/local/bin/composer"
 
   # Serverspec
   # config.vm.provision :serverspec do |spec|

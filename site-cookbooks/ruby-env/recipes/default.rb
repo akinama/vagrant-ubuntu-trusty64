@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-%w{gcc git}.each do |pkg|
+%w{gcc git libffi-dev libreadline-dev}.each do |pkg|
   package pkg do
     action :install
   end
